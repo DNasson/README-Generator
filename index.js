@@ -21,11 +21,9 @@ const generateMarkdown = ({title, description, installation, usage, license, con
     ## Usage
     ${usage}
 
-    ## Credits
+    ## Contributing
     ${contributing}
 
-    ## Tests
-    
     ${tests}
     
     ## License
@@ -96,7 +94,7 @@ inquirer
 .then((answers) => {
     const README = generateMarkdown(answers);
 
-    fs.writeFile('markdown.js', README,
+    fs.writeFile('readMESample.md', README,
     (err) =>
     err ? console.log(err) : console.log ('Successfully created readME!')
     );
