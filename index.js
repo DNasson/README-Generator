@@ -4,39 +4,39 @@ const fs = require('fs');
 
 // object to outline readME project
 const generateMarkdown = ({title, description, installation, usage, license, contributing, tests, github, email}) =>
-    `
-    # ${title}
-    
-    ## Description
-    ${description}
-    
-    ## 'Table of Contents'
-    - [Installation](#Installation)
-    - [Usage](#Usage)
-    - [Contributing](#Contributing)
-    - [Tests] (#Tests)
-    - [License](#License)
-    - [Questions](#Questions)
-    
+`
+# ${title}
 
-    # Installation
-    ${installation}
-    
-    # Usage
-    ${usage}
+## Description
+${description}
 
-    # Contributing
-    ${contributing}
+## 'Table of Contents'
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [License](#license)
+- [Questions](#questions)
 
-    # Tests
-    ${tests}
-    
-    # License
-    ${license}
-    
-    # Questions?
-    ${github}
-    ${email}
+
+# Installation
+${installation}
+
+# Usage
+${usage}
+
+# Contributing
+${contributing}
+
+# Tests
+${tests}
+
+# License
+${license}
+
+# Questions?
+${github}
+${email}
 `;
 // question prompts for sections of readME
 inquirer

@@ -1,33 +1,33 @@
 
-    # ReadMe Generator
-    
-    ## Description
-    Generate ReadMe
-    
-    ## 'Table of Contents'
-    - [Installation](#Installation)
-    - [Usage](#Usage)
-    - [Contributing](#Contributing)
-    - [Tests] (#Tests)
-    - [License](#License)
-    - [Questions](#Questions)
-    
+# ReadMe Generator
 
-    # Installation
-    computer
-    
-    # Usage
-    fingers
+## Description
+Generate ReadMe
 
-    # Contributing
-    no
+## 'Table of Contents'
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Tests] (#tests)
+- [License](#license)
+- [Questions](#questions)
 
-    # Tests
-    none
-    
-    # License
-    MIT License
-    
-    # Questions?
-    DNasson
-    daniellememmott@hotmail.com
+
+# Installation
+computer
+
+# Usage
+fingers
+
+# Contributing
+no
+
+# Tests
+none
+
+# License
+MIT License
+
+# Questions?
+DNasson
+daniellememmott@hotmail.com
