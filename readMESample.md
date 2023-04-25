@@ -1,33 +1,33 @@
 
-# ReadMe Generator
+# ReadME Generator
 
 ## Description
-Generate ReadMe
+Generate ReadME
 
-## 'Table of Contents'
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Tests] (#tests)
+- [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)
 
 
 # Installation
-computer
+Example
 
 # Usage
-fingers
+Example
 
 # Contributing
-no
+Example
 
 # Tests
-none
+Example
 
 # License
 MIT License
 
 # Questions?
 DNasson
-daniellememmott@hotmail.com
+Example
