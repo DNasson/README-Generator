@@ -1,7 +1,8 @@
-// TODO: Include packages needed for this application
+// Dependencies
 const inquirer = require('inquirer');
 const fs = require('fs');
-// TODO: Create an array of questions for user input Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+
+// object to outline readME project
 const generateMarkdown = ({title, description, installation, usage, license, contributing, tests, github, email}) =>
     `
     # ${title}
@@ -12,28 +13,32 @@ const generateMarkdown = ({title, description, installation, usage, license, con
     ## 'Table of Contents'
     - [Installation](#Installation)
     - [Usage](#Usage)
-    - [Credits](#Credits)
+    - [Contributing](#Contributing)
+    - [Tests] (#Tests)
     - [License](#License)
+    - [Questions](#Questions)
     
-    ## Installation
+
+    # Installation
     ${installation}
     
-    ## Usage
+    # Usage
     ${usage}
 
-    ## Contributing
+    # Contributing
     ${contributing}
 
+    # Tests
     ${tests}
     
-    ## License
+    # License
     ${license}
     
-    ## Questions?
+    # Questions?
     ${github}
     ${email}
 `;
-
+// question prompts for sections of readME
 inquirer
     .prompt([
         {
@@ -61,12 +66,11 @@ inquirer
             message: 'What is your project license?',
             choices: ['Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1',' Mozilla Public License 2.0', 'The Unilicense'],
             name: 'license',
-            // 'Apache License 2.0', 'GNU General Public License v3.0', 'MIT License', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal', 'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0', 'GNU Lesser General Public License v2.1',' Mozilla Public License 2.0', 'The Unilicense'
         },
 
         {
             type: 'input',
-            message: 'Who contributed to your project?',
+            message: 'Did anyone contribute to your project?',
             name: 'contributing',
         },
         {
@@ -74,11 +78,6 @@ inquirer
             message: 'What tests have been run?',
             name: 'tests',
         },
-        // {
-        //     type: 'input',
-        //     message: 'Who to contact for questions?',
-        //     name: 'questions',
-        // },
         {
             type: 'input',
             message: 'GitHub username?',
@@ -91,6 +90,7 @@ inquirer
         },
     ])
 
+    // put the answers into the correct spaces on the readME and write a file in a readME.md file.
 .then((answers) => {
     const README = generateMarkdown(answers);
 
@@ -99,17 +99,5 @@ inquirer
     err ? console.log(err) : console.log ('Successfully created readME!')
     );
 });
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeToFile('/markdown.js', answers)
-// }
-// (err) =>
-//     err ? console.log(err) : console.log ('Successfully created readME!')
-//     ;
 
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
 
